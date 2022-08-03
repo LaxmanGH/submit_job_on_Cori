@@ -1,4 +1,4 @@
-# This repo contains the step-by-step idea to submit the jobs on Cori (NERSC). I have to do this for my simulation work, where the simulation is done for LGND_1T_CDR cryostat geometry to look for the external gammas
+This repo contains the step-by-step idea to submit the jobs on Cori (NERSC). I have to do this for my simulation work, where the simulation is done for LGND_1T_CDR cryostat geometry to look for the external gammas
 
 * step 0: you should be on cori. you have to install your own ROOT,Genant4, and MaGe. OR if you want to use the legend container, run the following in the terminal:
 ```sh
