@@ -1,0 +1,36 @@
+# Management 
+/MG/manager/mglog routine #debugging
+
+/MG/manager/seedWithUUID
+
+# Process List
+/MG/processes/realm BBdecay
+/MG/processes/lowenergy true
+
+# Configure Detector
+/MG/geometry/detector LGND_1T_CDR_Baseline 
+/MG/L1000/SetSensitiveVolumeGermanium true
+/MG/L1000/SetSensitiveVolumeArgon true
+
+/MG/eventaction/rootschema MCRun
+/MG/eventaction/reportingfrequency 1000000
+/MG/eventaction/rootfilename OUTPUTROOTNAME
+
+/MG/io/MCRun/SetSensitiveIDLabelScheme askGeom
+/MG/io/MCRun/setRunID 001
+
+#/MG/io/MCRun/setWriteAllStepsInEventsThatDepositEnergy true
+/MG/io/MCRun/setWriteEventsThatDepositEnergyInGe true
+
+# Initialize Geant4 and geometry
+/run/initialize
+
+/MG/generator/select SPS
+/MG/generator/confine volume
+/MG/generator/volume Cryostat_001
+
+/gps/particle gamma
+
+/gps/ene/type Mono
+/gps/ene/mono 2614 keV
+/run/beamOn 10000000
