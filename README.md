@@ -5,7 +5,7 @@ This repo contains the step-by-step idea to submit the jobs on Cori (NERSC) for 
 shifter --image docker:legendexp/legend-base:latest
 ```
 but you should use the MaGe cmake branch to load the CDR geometry. You can find the installation script (intallMaGe.py) on github repo of LEGEND.
-
+The file setup_mage.sh sets properly the required environment variable needed for MaGe simulation.
 ### create macros
 Create the macros using the following code in the terminal:
 ```sh
