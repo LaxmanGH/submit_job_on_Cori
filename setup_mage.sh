@@ -1,0 +1,11 @@
+#source /opt/geant4/share/Geant4-10.5.1/geant4make/geant4make.sh
+export MGDODIR=/global/u1/l/laxman/sw/MGDO
+export TAMDIR=$MGDODIR/tam
+export MAGEDIR=/global/u1/l/laxman/sw/MaGe/build
+export MGGENERATORDATA=/global/u1/l/laxman/sw/share/MaGe/generators
+export MGGERDAGEOMETRY=/global/u1/l/laxman/sw/share/MaGe/gerdageometry
+export MPPDIR=/global/u1/l/laxman/sw/mage-post-proc
+export PATH=/global/homes/l/laxman/sw/bin:$PATH
+export LD_LIBRARY_PATH=/global/homes/l/laxman/sw/lib:$LD_LIBRARY_PATH
+export ROOT_INCLUDE_PATH=/opt/clhep/include:/global/homes/l/laxman/sw/include/mgdo:/global/homes/l/laxman/sw/include/tam:$TAMDIR:/global/homes/l/laxman/sw/include/mage:/global/homes/l/laxman/sw/include/mage-post-proc:${ROOT_INCLUDE_PATH}
+export PYTHONPATH=/global/homes/l/laxman/sw/lib:$PYTHONPATH
